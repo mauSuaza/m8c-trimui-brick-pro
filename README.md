@@ -36,6 +36,14 @@ has no m8c. The stock OS drives the screen fine, so this packages m8c as a stock
 
 Your songs are saved on the Teensy's SD card, not on the Brick.
 
+## Known limitations
+
+- **Sleep breaks the connection.** If the Brick Pro goes to sleep while m8c is running, the Teensy
+  isn't recognized right away after waking and the M8 display glitches. Unsaved work can be lost.
+  - **Save often** (Project view → SAVE). Songs live on the Teensy's SD card, not the Brick's.
+  - Turn off or lengthen the Brick's auto-sleep in the stock Settings before long sessions.
+  - If it happens: quit m8c (Select + B), unplug and replug the Teensy, and relaunch M8C.
+
 ## How it works
 
 - **m8c 2.2.3** ARM64 build with SDL 3.2.20 and the Brick framebuffer/controls bridge from
