@@ -1,0 +1,5 @@
+log*.txt
+.asoundrc
+.DS_Store
+._*
+*.zip

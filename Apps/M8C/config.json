@@ -1,0 +1,7 @@
+{
+  "label": "M8C",
+  "icon": "icon.png",
+  "iconsel": "icon.png",
+  "launch": "launch.sh",
+  "description": "Dirtywave M8 headless display (Teensy 4.1 over USB)"
+}

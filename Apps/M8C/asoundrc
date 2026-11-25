@@ -1,0 +1,32 @@
+# ALSA overrides used only by m8c (loaded as ~/.asoundrc because launch.sh sets HOME to the app folder).
+#
+# The stock TrimUI config defines "sysdefault" without a CARD argument, so SDL3 cannot open
+# "sysdefault:0"/"sysdefault:1" to list sound cards and never sees the M8.
+# These definitions accept a card number or name and convert formats (plug) on top of the raw card.
+
+ctl.!sysdefault {
+    @args [ CARD ]
+    @args.CARD {
+        type string
+        default "0"
+    }
+    type hw
+    card $CARD
+}
+
+pcm.!sysdefault {
+    @args [ CARD ]
+    @args.CARD {
+        type string
+        default "0"
+    }
+    type plug
+    slave.pcm {
+        type hw
+        card $CARD
+    }
+    hint {
+        show on
+        description "Default audio device"
+    }
+}
