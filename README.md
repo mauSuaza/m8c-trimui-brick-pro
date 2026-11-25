@@ -42,7 +42,8 @@ Your songs are saved on the Teensy's SD card, not on the Brick.
   isn't recognized right away after waking and the M8 display glitches. Unsaved work can be lost.
   - **Save often** (Project view → SAVE). Songs live on the Teensy's SD card, not the Brick's.
   - Turn off or lengthen the Brick's auto-sleep in the stock Settings before long sessions.
-  - If it happens: quit m8c (Select + B), unplug and replug the Teensy, and relaunch M8C.
+  - If it happens: quit m8c (Select + B) and **restart the Brick**, then relaunch M8C. If the
+    Teensy still isn't detected, unplug and replug it as well.
 
 ## How it works
 
