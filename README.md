@@ -30,8 +30,8 @@ has no m8c. The stock OS drives the screen fine, so this packages m8c as a stock
 | D-pad | Arrows |
 | A | PLAY |
 | B | SHIFT |
-| X | EDIT |
-| Y | OPTION |
+| X | OPTION |
+| Y | EDIT |
 | Select + B | Quit m8c |
 
 Your songs are saved on the Teensy's SD card, not on the Brick.
